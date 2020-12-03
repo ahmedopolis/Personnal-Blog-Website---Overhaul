@@ -1,0 +1,36 @@
+body {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/black-and-white-pattern-image.jpg");
+}
+
+.fullgridcontainer {
+  background-color: white;
+  display: grid;
+  grid-template-areas:
+    "hd hd hd hd hd hd"
+    "mn mn mn mn mn mn"
+    "ft ft ft ft ft ft";
+}
+
+header {
+  grid-area: hd;
+  background-color: blue;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+main {
+  grid-area: mn;
+  background-color: red;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+footer {
+  grid-area: ft;
+  background-color: yellow;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
