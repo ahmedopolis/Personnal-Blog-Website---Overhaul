@@ -12,7 +12,6 @@ header {
   align-items: center;
   grid-area: hd;
   background-color: white;
-  padding: 20px 0;
   font-size: 30px;
 }
 
@@ -47,17 +46,41 @@ li a:hover:not(.active) {
 
 main {
   grid-area: mn;
-  height: 1000px;
-  background-color: red;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+}
+
+#main-article-block {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/Lebron-Nike-Together-Image.PNG");
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
+}
+
+#main-article-text {
+  width: 500px;
+  height: 350px;
+  background-color: white;
+  position: relative;
+  left: 50px;
+  padding: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
 }
 
 footer {
   grid-area: ft;
   background-color: yellow;
   text-align: center;
-  padding: 20px 0;
   font-size: 30px;
 }
