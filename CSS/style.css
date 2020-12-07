@@ -1,5 +1,11 @@
 * {
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1000px;
+  background: black;
 }
 
 .fullgridcontainer {
@@ -14,40 +20,57 @@
 }
 
 header {
-  display: flex;
-  align-items: center;
   grid-area: hd;
   background-color: white;
   font-size: 25px;
+  padding-bottom: 5px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
+nav img {
   float: left;
 }
 
-li a {
+nav a {
+  float: left;
   display: block;
-  color: black;
   text-align: center;
-  padding: 14px 16px;
+  color: black;
+  margin: 10px;
+  padding: 5px 5px;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
-  color: white;
+nav a:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav a.active {
   font-weight: bold;
 }
 
-.active {
-  font-weight: bold;
+.navigation-bar-right {
+  float: right;
+}
+
+#login {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+#search-logo {
+  padding-left: 300px;
+  right: 5px;
+  width: 35px;
+  height: 25px;
+}
+
+#search-logo:hover {
+  border-radius: 25px;
+  border: 2px solid black;
+  border-spacing: 50px 50px;
 }
 
 main {
@@ -56,7 +79,8 @@ main {
 
 #main-article-block {
   background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/Lebron-Nike-Together-Image.PNG");
-  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1000px;
   height: 500px;
   position: relative;
 }
