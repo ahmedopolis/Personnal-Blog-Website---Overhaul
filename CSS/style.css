@@ -1,4 +1,10 @@
+* {
+  overflow-x: hidden;
+}
+
 .fullgridcontainer {
+  margin: auto;
+  padding: 10px;
   background-color: white;
   display: grid;
   grid-template-areas:
