@@ -80,16 +80,19 @@ main {
   position: relative;
 }
 
-#main-article-text {
+#first-article-text {
   width: 500px;
   height: 350px;
-  background-color: white;
   position: absolute;
   left: 50px;
   padding: 15px;
 }
 
-#main-article-text h3 {
+.main-article-text {
+  background-color: white;
+}
+
+.main-article-text h3 {
   color: rgba(28, 28, 28, 0.5);
   font-family: Open Sans;
   font-weight: Regular;
@@ -98,7 +101,7 @@ main {
   text-align: left;
 }
 
-#main-article-text h2 {
+.main-article-text h2 {
   color: rgba(0, 0, 0, 1);
   font-family: Libre Baskerville, serif;
   font-weight: Bold;
@@ -107,7 +110,7 @@ main {
   text-align: left;
 }
 
-#main-article-text h4 {
+.main-article-text h4 {
   color: rgba(28, 28, 28, 0.5);
   font-family: Open Sans, sans-serif;
   font-weight: Regular;
@@ -115,12 +118,23 @@ main {
   text-align: left;
 }
 
-#main-article-text p {
+.main-article-text p {
   font-family: Open Sans;
   font-weight: Regular;
   font-size: 16px;
   opacity: 1;
   text-align: left;
+}
+
+#editor-block h1 {
+  font-family: Open Sans;
+  font-weight: Bold;
+  font-size: 42px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: black;
+  opacity: 1;
+  text-align: center;
 }
 
 footer {
