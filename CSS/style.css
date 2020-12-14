@@ -13,7 +13,7 @@ body {
   display: grid;
   grid-template-areas:
     "hd hd hd hd hd hd"
-    "mn mn mn mn mn mn"
+    "mn mn mn mn mn mnsssssssssssssssssssssssssssssss"
     "ft ft ft ft ft ft";
 }
 
@@ -139,7 +139,7 @@ main {
   text-align: center;
 }
 
-.article-summary-display {
+#article-summary-display-1 {
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(2, 400px);
@@ -164,28 +164,83 @@ main {
 }
 
 #article-block-2 {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/air-jordan-1-image.jpg");
-  background-size: cover;
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/offwhite-air-jordan-1-image.jpg");
+  background-size: contain;
   width: 980px;
   height: 500px;
   position: relative;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 #second-article-text {
   width: 450px;
   height: 320px;
   position: absolute;
-  right: 50px;
+  right: 0px;
   padding: 15px;
   padding-top: 35px;
   bottom: 60px;
 }
 
+#lower-content-section {
+  display: grid;
+  grid-template-areas:
+    "col1 col1 col2 col2"
+    "col1 col1 col2 col2"
+    "col1 col1 col2 col2";
+}
+
+#article-summary-display-2 {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 200px 600px;
+  grid-template-rows: repeat(4, 200px);
+  grid-gap: 40px;
+  justify-content: center;
+}
+
+#image-box-4 {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/paper-building-image.jpg");
+  background-size: cover;
+}
+
+#image-box-5 {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/comfort-food-image.jpg");
+  background-size: cover;
+}
+
+#image-box-6 {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/fitness-image.jpg");
+  background-size: cover;
+}
+
+#image-box-7 {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/climate-change.jpg");
+  background-size: cover;
+}
+
+#tags-list h2 {
+  font-family: Libre Baskerville;
+  font-weight: bold;
+  font-size: 20px;
+  opacity: 1;
+}
+
+#tags-list h3 {
+  grid-area: col2;
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+}
+
 footer {
+  color: white;
+  margin-top: 30px;
   grid-area: ft;
-  background-color: yellow;
+  background-color: black;
   text-align: center;
   font-size: 30px;
+  height: 300px;
 }
