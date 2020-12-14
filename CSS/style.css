@@ -1,14 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-* {
-  overflow: hidden;
-}
-
 body {
-  margin: 0 auto;
+  margin: auto;
   max-width: 1000px;
-  background: black;
+  background: grey;
 }
 
 .fullgridcontainer {
@@ -72,17 +68,18 @@ main {
   grid-area: mn;
 }
 
-#main-article-block {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/Lebron-Nike-Together-Image.PNG");
+#article-block-1 {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-image.PNG");
   background-size: cover;
-  width: 1000px;
+  width: 980px;
   height: 500px;
   position: relative;
+  margin-top: 20px;
 }
 
 #first-article-text {
-  width: 500px;
-  height: 350px;
+  width: 450px;
+  height: 290px;
   position: absolute;
   left: 50px;
   padding: 15px;
@@ -92,17 +89,21 @@ main {
   background-color: white;
 }
 
+.main-article-text > * {
+  margin: 3px;
+}
+
 .main-article-text h3 {
-  color: rgba(28, 28, 28, 0.5);
+  color: gray;
   font-family: Open Sans;
   font-weight: Regular;
   font-size: 20px;
-  opacity: 1;
+  opacity: 10;
   text-align: left;
 }
 
 .main-article-text h2 {
-  color: rgba(0, 0, 0, 1);
+  color: black;
   font-family: Libre Baskerville, serif;
   font-weight: Bold;
   font-size: 25px;
@@ -111,11 +112,12 @@ main {
 }
 
 .main-article-text h4 {
-  color: rgba(28, 28, 28, 0.5);
+  color: gray;
   font-family: Open Sans, sans-serif;
   font-weight: Regular;
   opacity: 1;
   text-align: left;
+  margin: 10px;
 }
 
 .main-article-text p {
@@ -135,6 +137,50 @@ main {
   text-decoration-color: black;
   opacity: 1;
   text-align: center;
+}
+
+.article-summary-display {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(3, 300px);
+  grid-gap: 40px;
+  justify-content: center;
+}
+
+#image-box-1 {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/minimalism-image.jpeg");
+  background-size: cover;
+}
+
+#image-box-2 {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/social-media-image.png");
+  background-size: cover;
+}
+
+#image-box-3 {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/reddit-crypto.jpg");
+  background-size: cover;
+}
+
+#article-block-2 {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/air-jordan-1-image.jpg");
+  background-size: cover;
+  width: 980px;
+  height: 500px;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#second-article-text {
+  width: 450px;
+  height: 320px;
+  position: absolute;
+  right: 50px;
+  padding: 15px;
+  padding-top: 35px;
+  bottom: 60px;
 }
 
 footer {
