@@ -102,13 +102,27 @@ main {
   text-align: left;
 }
 
-.main-article-text h2 {
-  color: black;
+.main-article-text h2 a {
   font-family: Libre Baskerville, serif;
   font-weight: Bold;
   font-size: 25px;
-  opacity: 1;
   text-align: left;
+  overflow: hidden;
+  background: linear-gradient(to right, purple, purple 50%, black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.main-article-text h2 a:active {
+  font-weight: bolder;
+}
+
+.main-article-text h2 a:hover {
+  background-position: 0 100%;
 }
 
 .main-article-text h4 {
