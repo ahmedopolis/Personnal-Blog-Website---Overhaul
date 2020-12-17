@@ -4,7 +4,6 @@
 body {
   margin: auto;
   max-width: 1000px;
-  background: grey;
 }
 
 .fullgridcontainer {
@@ -25,6 +24,7 @@ header {
 
 nav img {
   float: left;
+  object-fit: cover;
 }
 
 nav a {
@@ -196,7 +196,7 @@ main {
   display: grid;
   grid-template-columns: 200px 600px;
   grid-template-rows: repeat(4, 200px);
-  grid-gap: 40px;
+  grid-gap: 48px;
   justify-content: center;
 }
 
@@ -231,16 +231,32 @@ main {
   grid-area: col2;
   font-family: Open Sans;
   font-weight: Regular;
-  font-size: 16px;
+  font-style: italic;
+  font-size: 15px;
   opacity: 1;
 }
 
 footer {
-  color: white;
   margin-top: 30px;
   grid-area: ft;
-  background-color: black;
   text-align: center;
-  font-size: 30px;
-  height: 300px;
+  height: auto;
+}
+
+#social-media {
+  display: flex;
+  justify-content: center;
+}
+
+#social-media img {
+  height: 30px;
+  width: 30px;
+  margin: 2px;
+}
+
+#footer-text {
+  text-align: center;
+  font-size: 15px;
+  margin: 10px;
+  margin-bottom: 10px;
 }
