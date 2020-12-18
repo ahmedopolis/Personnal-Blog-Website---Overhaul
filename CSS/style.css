@@ -68,6 +68,16 @@ main {
   grid-area: mn;
 }
 
+.banner-image {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-banner.jpg");
+  background-size: contain;
+  background-repeat: round;
+  width: 980px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 #article-block-1 {
   background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-image.PNG");
   background-size: cover;
@@ -91,6 +101,14 @@ main {
 
 .main-article-text > * {
   margin: 3px;
+}
+
+.main-article-text h1 {
+  font-family: Libre Baskerville, serif;
+  font-weight: Bold;
+  font-size: 35px;
+  text-align: center;
+  overflow: hidden;
 }
 
 .main-article-text h3 {
@@ -132,6 +150,10 @@ main {
   opacity: 1;
   text-align: left;
   margin: 10px;
+}
+
+#heading-4-variant {
+  text-align: center;
 }
 
 .main-article-text p {
