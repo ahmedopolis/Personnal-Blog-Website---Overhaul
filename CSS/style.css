@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 
 body {
   margin: auto;
@@ -328,6 +330,51 @@ blockquote {
   font-style: italic;
   font-size: 17px;
   opacity: 1;
+}
+
+#author-section-title {
+  color: darkgray;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 40px;
+  font-weight: Regular;
+  opacity: 1;
+  text-align: center;
+  margin: 10px;
+}
+
+.author-info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#author-profile-picture {
+  height: 200px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+#author-text {
+  max-width: 600px;
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+  text-align: justify;
+  margin-left: 10px;
+}
+
+#author-text h1 {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 18px;
+  text-align: left;
+}
+#author-text h1 span {
+  font-style: italic;
+}
+
+#author-text span {
+  font-weight: bold;
 }
 
 footer {
