@@ -72,13 +72,21 @@ main {
 }
 
 .banner-image {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-banner.jpg");
-  background-size: contain;
-  background-repeat: round;
   width: 980px;
   height: 250px;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+#banner-featured-image {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-banner.jpg");
+  background-size: contain;
+  background-repeat: round;
+}
+
+#banner-fashion-image {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/fashion-banner.jpg");
+  background-size: cover;
 }
 
 #article-block-1 {
