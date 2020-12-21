@@ -94,6 +94,12 @@ main {
   background-size: contain;
 }
 
+#banner-fitness-image {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/fitness-banner.jpg");
+  background-size: contain;
+  background-repeat: round;
+}
+
 #article-block-1 {
   background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-image.PNG");
   background-size: cover;
