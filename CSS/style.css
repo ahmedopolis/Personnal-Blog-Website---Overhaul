@@ -89,6 +89,11 @@ main {
   background-size: cover;
 }
 
+#banner-finance-image {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/finance-banner.jpg");
+  background-size: contain;
+}
+
 #article-block-1 {
   background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-image.PNG");
   background-size: cover;
