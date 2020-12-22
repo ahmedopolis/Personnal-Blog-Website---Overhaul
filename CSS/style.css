@@ -110,6 +110,21 @@ main {
   background-size: cover;
 }
 
+#banner-nature-image {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/nature-banner.jpg");
+  background-size: cover;
+}
+
+#banner-real-estate-image {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/real-estate-banner.jpg");
+  background-size: cover;
+}
+
+#banner-technology-image {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/social-media-banner.jpg");
+  background-size: cover;
+}
+
 #article-block-1 {
   background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-image.PNG");
   background-size: cover;
