@@ -100,6 +100,16 @@ main {
   background-repeat: round;
 }
 
+#banner-food-image {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/food-banner.jpg");
+  background-size: cover;
+}
+
+#banner-minimalism-image {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/minimalism-banner.jpg");
+  background-size: cover;
+}
+
 #article-block-1 {
   background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-image.PNG");
   background-size: cover;
