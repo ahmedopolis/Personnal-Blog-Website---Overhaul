@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 body {
   margin: auto;
@@ -128,6 +129,17 @@ main {
 #banner-about-image {
   background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/banner-about-image.jpg");
   background-size: cover;
+  height: 500px;
+}
+
+#banner-about-image h1 {
+  color: white;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 60px;
+  font-weight: Regular;
+  opacity: 1;
+  text-align: center;
+  margin: 10px;
 }
 
 #article-block-1 {
@@ -424,6 +436,16 @@ blockquote {
 
 #author-text span {
   font-weight: bold;
+}
+
+#about-title {
+  color: darkgray;
+  font-family: "Permanent Marker", cursive;
+  font-size: 80px;
+  font-weight: Regular;
+  opacity: 1;
+  text-align: center;
+  margin: 10px;
 }
 
 footer {
