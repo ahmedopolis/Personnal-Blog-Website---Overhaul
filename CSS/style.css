@@ -153,6 +153,12 @@ main {
   margin-top: 15px;
 }
 
+#banner-login-image {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/login-banner.jpg");
+  background-size: cover;
+  margin-top: 15px;
+}
+
 #article-block-1 {
   background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-image.PNG");
   background-size: cover;
