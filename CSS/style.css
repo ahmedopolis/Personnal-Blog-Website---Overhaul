@@ -9,11 +9,14 @@
 body {
   margin: auto;
   max-width: 1000px;
+  background-image: linear-gradient(white, black, white);
+  font-family: "Ubuntu", sans-serif;
 }
 
 .fullgridcontainer {
   padding: 10px;
   background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   display: grid;
   grid-template-areas:
     "hd hd hd hd hd hd"
