@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 
 body {
@@ -130,7 +130,7 @@ main {
 #banner-about-image {
   background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/banner-about-image.jpg");
   background-size: cover;
-  height: 500px;
+  height: auto;
 }
 
 #banner-about-image h1 {
@@ -440,20 +440,19 @@ blockquote {
 }
 
 #about-title {
-  color: darkgray;
-  font-family: "Permanent Marker", cursive;
-  font-size: 40px;
-  font-weight: Regular;
+  font-family: "Press Start 2P", cursive;
+  font-size: 60px;
+  font-family: "DM Serif Display", serif;
   opacity: 1;
   text-align: center;
   margin: 10px;
   margin-bottom: 20px;
+  text-decoration: overline;
 }
 
 #meet-the-team {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(1, auto);
   grid-gap: 40px;
 }
 
@@ -472,7 +471,7 @@ blockquote {
 
 .card img {
   max-width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -481,6 +480,7 @@ blockquote {
   font-weight: Bold;
   font-size: 35px;
   text-align: center;
+  padding-top: 10px;
 }
 
 .card h3 {
@@ -495,8 +495,9 @@ blockquote {
 .card p {
   font-family: Open Sans;
   font-weight: Regular;
-  font-size: 16px;
+  font-size: 14px;
   text-align: justify;
+  padding: 15px;
 }
 
 .card p span {
