@@ -24,7 +24,9 @@
         </nav>
       </header>
       <main>
-        <div>
+        <div class="banner-image" id="banner-contact-image"></div>
+        <h1 class="section-title"></h1>
+        <div class="contact-box">
           <form>
             <label for="firstname">First Name</label>
             <input
@@ -33,7 +35,6 @@
               name="firstname"
               placeholder="Please enter first name..."
             />
-
             <label for="lastname">Last Name</label>
             <input
               type="text"
@@ -41,7 +42,13 @@
               name="lastname"
               placeholder="Please enter last name..."
             />
-
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Please enter email address..."
+            />
             <label for="country">Country</label>
             <select id="country" name="country">
               <option value="Afganistan">Afghanistan</option>
@@ -303,7 +310,6 @@
               <option value="Zambia">Zambia</option>
               <option value="Zimbabwe">Zimbabwe</option>
             </select>
-
             <label for="subject">Subject</label>
             <textarea
               id="subject"
@@ -311,7 +317,6 @@
               placeholder="Write your answer here..."
               style="height: 200px"
             ></textarea>
-
             <input type="submit" value="Submit" />
           </form>
         </div>
