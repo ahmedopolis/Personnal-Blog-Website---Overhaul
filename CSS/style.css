@@ -7,640 +7,716 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 
 body {
+  width: 100%;
   margin: auto;
-  max-width: 1000px;
   background-image: linear-gradient(white, black, white);
   font-family: "Ubuntu", sans-serif;
 }
 
-.fullgridcontainer {
-  padding: 10px;
-  background-color: white;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  display: grid;
-  grid-template-areas:
-    "hd hd hd hd hd hd"
-    "mn mn mn mn mn mnsssssssssssssssssssssssssssssss"
-    "ft ft ft ft ft ft";
-}
+@media (min-width: 600px) and (max-width: 9998px) {
+  body {
+    width: 100%;
+    margin: auto;
+    background-image: linear-gradient(white, black, white);
+    font-family: "Ubuntu", sans-serif;
+  }
 
-header {
-  grid-area: hd;
-  background-color: white;
-  padding-bottom: 5px;
-}
+  .fullgridcontainer {
+    max-width: 90%;
+    margin: auto;
+    padding: 2%;
+    background-color: white;
+    box-shadow: 0 1% 2% 0 rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-areas:
+      "hd hd hd hd hd hd"
+      "mn mn mn mn mn mnsssssssssssssssssssssssssssssss"
+      "ft ft ft ft ft ft";
+  }
 
-nav img {
-  float: left;
-  object-fit: cover;
-}
+  header {
+    grid-area: hd;
+    background-color: white;
+    padding-bottom: 5px;
+  }
 
-nav a {
-  float: left;
-  display: block;
-  text-align: center;
-  font-size: 25px;
-  color: black;
-  margin: 10px;
-  padding: 5px 5px;
-  text-decoration: none;
-}
+  nav img {
+    float: left;
+    object-fit: cover;
+  }
 
-nav a:hover {
-  font-weight: bold;
-  cursor: pointer;
-}
+  nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    margin: 10px;
+    padding: 5px 5px;
+    text-decoration: none;
+  }
 
-nav a.active {
-  font-weight: bold;
-}
+  nav a:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
 
-.navigation-bar-right {
-  float: right;
-}
+  nav a.active {
+    font-weight: bold;
+  }
 
-#login {
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 15px;
-  border: 2px solid black;
-}
+  #login {
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    border: 2px solid black;
+  }
 
-#search-icon {
-  width: 25px;
-  height: 25px;
-  padding-top: 20px;
-}
-
-main {
-  grid-area: mn;
-}
-
-.banner-image {
-  width: 980px;
-  height: 250px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-#banner-featured-image {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-banner.jpg");
-  background-size: contain;
-  background-repeat: round;
-}
-
-#banner-fashion-image {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/fashion-banner.jpg");
-  background-size: cover;
-}
-
-#banner-finance-image {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/finance-banner.jpg");
-  background-size: contain;
-}
-
-#banner-fitness-image {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/fitness-banner.jpg");
-  background-size: contain;
-  background-repeat: round;
-}
-
-#banner-food-image {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/food-banner.jpg");
-  background-size: cover;
-}
-
-#banner-minimalism-image {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/minimalism-banner.jpg");
-  background-size: cover;
-}
-
-#banner-nature-image {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/nature-banner.jpg");
-  background-size: cover;
-}
-
-#banner-real-estate-image {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/real-estate-banner.jpg");
-  background-size: cover;
-}
-
-#banner-technology-image {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/social-media-banner.jpg");
-  background-size: cover;
-}
-
-#banner-about-image {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/banner-about-image.jpg");
-  background-size: cover;
-  height: auto;
-}
-
-#banner-about-image h1 {
-  color: white;
-  font-family: "Shadows Into Light", cursive;
-  font-size: 60px;
-  font-weight: Regular;
-  opacity: 1;
-  text-align: center;
-  margin: 10px;
-}
-
-#banner-contact-image {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/contact-us-banner.jpg");
-  background-size: cover;
-  margin-top: 15px;
-}
-
-#banner-login-image {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/login-banner.jpg");
-  background-size: cover;
-  margin-top: 15px;
-}
-
-#article-block-1 {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-image.PNG");
-  background-size: cover;
-  width: 980px;
-  height: 500px;
-  position: relative;
-  margin-top: 20px;
-}
-
-#first-article-text {
-  width: 450px;
-  height: 290px;
-  position: absolute;
-  left: 50px;
-  padding: 15px;
-}
-
-.main-article-text {
-  background-color: white;
-  padding: 10px;
-}
-
-.main-article-text > * {
-  margin: 3px;
-}
-
-.main-article-text h1 {
-  font-family: Libre Baskerville, serif;
-  font-weight: Bold;
-  font-size: 38px;
-  text-align: center;
-  overflow: hidden;
-}
-
-.main-article-text h3 {
-  color: gray;
-  font-family: Open Sans;
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 10;
-  text-align: left;
-}
-
-.main-article-text h2 a {
-  font-family: Libre Baskerville, serif;
-  font-weight: Bold;
-  font-size: 25px;
-  text-align: left;
-  overflow: hidden;
-  background: linear-gradient(to right, purple, purple 50%, black 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: background-position 275ms ease;
-}
-
-.main-article-text h2 a:active {
-  font-weight: bolder;
-}
-
-.main-article-text h2 a:hover {
-  background-position: 0 100%;
-}
-
-.main-article-text h4 {
-  color: gray;
-  font-family: Open Sans, sans-serif;
-  font-weight: Regular;
-  opacity: 1;
-  text-align: left;
-  margin: 10px;
-}
-
-#heading-4-variant {
-  text-align: center;
-}
-
-.main-article-text p {
-  font-family: Open Sans;
-  font-weight: Regular;
-  font-size: 16px;
-  opacity: 1;
-  text-align: left;
-  display: inline;
-}
-
-.main-article-text p::after {
-  content: "\a";
-  white-space: pre-line;
-}
-
-.main-article-text:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-blockquote {
-  text-indent: -0.5em;
-  border-left: 30px solid lightgray;
-  font-family: "Langar", cursive;
-  font-size: 25px;
-}
-@supports (hanging-punctuation: first) {
-  blockquote {
-    text-indent: 0;
-    hanging-punctuation: first;
+  #search-icon {
+    float: right;
+    width: 25px;
+    height: 25px;
+    padding-top: 20px;
   }
 }
 
-blockquote::before {
-  content: open-quote;
-}
-blockquote::after {
-  content: close-quote;
-}
-blockquote {
-  quotes: "“" "”" "‘" "’";
-}
+@media (min-width: 999px) {
+  body {
+    width: 100%;
+    margin: auto;
+    background-image: linear-gradient(white, black, white);
+    font-family: "Ubuntu", sans-serif;
+  }
 
-.main-article-text figure {
-  border: thin black;
-  display: flex;
-  flex-flow: column;
-  padding: 5px;
-  max-width: 450px;
-  margin: auto;
-}
+  .fullgridcontainer {
+    max-width: 1000px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-areas:
+      "hd hd hd hd hd hd"
+      "mn mn mn mn mn mnsssssssssssssssssssssssssssssss"
+      "ft ft ft ft ft ft";
+  }
 
-.main-article-text img {
-  max-width: 450px;
-  max-height: 300px;
-}
+  header {
+    grid-area: hd;
+    background-color: white;
+    padding-bottom: 5px;
+  }
 
-.main-article-text figcaption {
-  background-color: black;
-  color: whitesmoke;
-  font: italic smaller sans-serif;
-  padding: 3px;
-  text-align: center;
-}
+  nav img {
+    float: left;
+    object-fit: cover;
+  }
 
-#editor-block h1 {
-  font-family: Open Sans;
-  font-weight: Bold;
-  font-size: 42px;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-color: black;
-  opacity: 1;
-  text-align: center;
-}
+  nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    margin: 10px;
+    padding: 5px 5px;
+    text-decoration: none;
+  }
 
-#article-summary-display-1 {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 400px);
-  grid-template-rows: repeat(3, 300px);
-  grid-gap: 40px;
-  justify-content: center;
-}
+  nav a:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
 
-#image-box-1 {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/minimalism-image.jpeg");
-  background-size: cover;
-}
+  nav a.active {
+    font-weight: bold;
+  }
 
-#image-box-2 {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/social-media-image.png");
-  background-size: cover;
-}
+  #login {
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    border: 2px solid black;
+  }
 
-#image-box-3 {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/reddit-crypto.jpg");
-  background-size: cover;
-}
+  #search-icon {
+    float: right;
+    width: 25px;
+    height: 25px;
+    padding-top: 20px;
+  }
 
-#article-block-2 {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/offwhite-air-jordan-1-image.jpg");
-  background-size: contain;
-  width: 980px;
-  height: 500px;
-  position: relative;
-  margin-top: 50px;
-  margin-bottom: 45px;
-}
+  main {
+    grid-area: mn;
+  }
 
-#second-article-text {
-  width: 450px;
-  height: 320px;
-  position: absolute;
-  right: 0px;
-  padding: 15px;
-  padding-top: 35px;
-  bottom: 60px;
-}
+  .banner-image {
+    width: 980px;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
 
-#lower-content-section {
-  display: grid;
-  grid-template-areas:
-    "col1 col1 col2 col2"
-    "col1 col1 col2 col2"
-    "col1 col1 col2 col2";
-}
+  #banner-featured-image {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-banner.jpg");
+    background-size: contain;
+    background-repeat: round;
+  }
 
-#article-summary-display-2 {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 200px 600px;
-  grid-template-rows: repeat(4, 220px);
-  grid-gap: 48px;
-  justify-content: center;
-}
+  #banner-fashion-image {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/fashion-banner.jpg");
+    background-size: cover;
+  }
 
-#image-box-4 {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/paper-building-image.jpg");
-  background-size: cover;
-}
+  #banner-finance-image {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/finance-banner.jpg");
+    background-size: contain;
+  }
 
-#image-box-5 {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/comfort-food-image.jpg");
-  background-size: cover;
-}
+  #banner-fitness-image {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/fitness-banner.jpg");
+    background-size: contain;
+    background-repeat: round;
+  }
 
-#image-box-6 {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/fitness-image.jpg");
-  background-size: cover;
-}
+  #banner-food-image {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/food-banner.jpg");
+    background-size: cover;
+  }
 
-#image-box-7 {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/climate-change.jpg");
-  background-size: cover;
-}
+  #banner-minimalism-image {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/minimalism-banner.jpg");
+    background-size: cover;
+  }
 
-#tags-list h2 {
-  font-family: Libre Baskerville;
-  font-weight: bold;
-  font-size: 20px;
-  opacity: 1;
-}
+  #banner-nature-image {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/nature-banner.jpg");
+    background-size: cover;
+  }
 
-#tags-list h3 {
-  grid-area: col2;
-  font-family: Open Sans;
-  font-weight: Regular;
-  font-style: italic;
-  font-size: 17px;
-  opacity: 1;
-}
+  #banner-real-estate-image {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/real-estate-banner.jpg");
+    background-size: cover;
+  }
 
-#author-section-title {
-  color: darkgray;
-  font-family: "Shadows Into Light", cursive;
-  font-size: 40px;
-  font-weight: Regular;
-  opacity: 1;
-  text-align: center;
-  margin: 10px;
-}
+  #banner-technology-image {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/social-media-banner.jpg");
+    background-size: cover;
+  }
 
-.author-info {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
+  #banner-about-image {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/banner-about-image.jpg");
+    background-size: cover;
+    height: auto;
+  }
 
-#author-profile-picture {
-  height: 200px;
-  width: 200px;
-  margin-right: 10px;
-}
+  #banner-about-image h1 {
+    color: white;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 60px;
+    font-weight: Regular;
+    opacity: 1;
+    text-align: center;
+    margin: 10px;
+  }
 
-#author-text {
-  max-width: 600px;
-  font-family: Open Sans;
-  font-weight: Regular;
-  font-size: 16px;
-  opacity: 1;
-  text-align: justify;
-  margin-left: 10px;
-}
+  #banner-contact-image {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/contact-us-banner.jpg");
+    background-size: cover;
+    margin-top: 15px;
+  }
 
-#author-text h1 {
-  font-family: "Berkshire Swash", cursive;
-  font-size: 18px;
-  text-align: left;
-}
-#author-text h1 span {
-  font-style: italic;
-}
+  #banner-login-image {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/login-banner.jpg");
+    background-size: cover;
+    margin-top: 15px;
+  }
 
-#author-text span {
-  font-weight: bold;
-}
+  #article-block-1 {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-image.PNG");
+    background-size: cover;
+    width: 980px;
+    height: 500px;
+    position: relative;
+    margin-top: 20px;
+  }
 
-.section-title {
-  font-family: "Press Start 2P", cursive;
-  font-size: 60px;
-  font-family: "DM Serif Display", serif;
-  opacity: 1;
-  text-align: center;
-  margin: 10px;
-  margin-bottom: 20px;
-  text-decoration: overline;
-}
+  #first-article-text {
+    width: 450px;
+    height: 290px;
+    position: absolute;
+    left: 50px;
+    padding: 15px;
+  }
 
-#meet-the-team {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 40px;
-}
+  .main-article-text {
+    background-color: white;
+    padding: 10px;
+  }
 
-.card {
-  display: flex;
-  flex-flow: column;
-  border: thin black;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
+  .main-article-text > * {
+    margin: 3px;
+  }
 
-.card > * {
-  margin: 0%;
-  padding: 0%;
-  overflow: hidden;
-}
+  .main-article-text h1 {
+    font-family: Libre Baskerville, serif;
+    font-weight: Bold;
+    font-size: 38px;
+    text-align: center;
+    overflow: hidden;
+  }
 
-.card img {
-  max-width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
+  .main-article-text h3 {
+    color: gray;
+    font-family: Open Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 10;
+    text-align: left;
+  }
 
-.card h2 {
-  font-family: "Bangers", cursive;
-  font-weight: Bold;
-  font-size: 35px;
-  text-align: center;
-  padding-top: 10px;
-}
+  .main-article-text h2 a {
+    font-family: Libre Baskerville, serif;
+    font-weight: Bold;
+    font-size: 25px;
+    text-align: left;
+    overflow: hidden;
+    background: linear-gradient(to right, purple, purple 50%, black 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+  }
 
-.card h3 {
-  color: gray;
-  font-family: Open Sans;
-  font-weight: Regular;
-  font-size: 18px;
-  opacity: 10;
-  text-align: center;
-}
+  .main-article-text h2 a:active {
+    font-weight: bolder;
+  }
 
-.card p {
-  font-family: Open Sans;
-  font-weight: Regular;
-  font-size: 14px;
-  text-align: justify;
-  padding: 15px;
-}
+  .main-article-text h2 a:hover {
+    background-position: 0 100%;
+  }
 
-.card p span {
-  font-weight: Bold;
-}
+  .main-article-text h4 {
+    color: gray;
+    font-family: Open Sans, sans-serif;
+    font-weight: Regular;
+    opacity: 1;
+    text-align: left;
+    margin: 10px;
+  }
 
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid gray;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
+  #heading-4-variant {
+    text-align: center;
+  }
 
-input[type="submit"] {
-  background-color: black;
-  font-weight: bold;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+  .main-article-text p {
+    font-family: Open Sans;
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+    display: inline;
+  }
 
-input[type="submit"]:hover {
-  background-color: gray;
-}
+  .main-article-text p::after {
+    content: "\a";
+    white-space: pre-line;
+  }
 
-.contact-box {
-  border-radius: 5px black;
-  font-weight: bold;
-  background-color: darkgray;
-  padding: 20px;
-  margin: auto;
-}
+  .main-article-text:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
 
-#login-container {
-  display: flex;
-  text-align: center;
-  width: 300px;
-  border-radius: 5px black;
-  font-weight: bold;
-  background-image: linear-gradient(white, gray);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  margin: auto;
-}
+  blockquote {
+    text-indent: -0.5em;
+    border-left: 30px solid lightgray;
+    font-family: "Langar", cursive;
+    font-size: 25px;
+  }
+  @supports (hanging-punctuation: first) {
+    blockquote {
+      text-indent: 0;
+      hanging-punctuation: first;
+    }
+  }
 
-#login-container img {
-  height: 120px;
-  width: 120px;
-  display: block;
-  margin: auto;
-}
+  blockquote::before {
+    content: open-quote;
+  }
+  blockquote::after {
+    content: close-quote;
+  }
+  blockquote {
+    quotes: "“" "”" "‘" "’";
+  }
 
-#login-title {
-  font-family: Open Sans;
-  font-weight: Regular;
-  font-size: 30px;
-  opacity: 10;
-  text-align: center;
-}
+  .main-article-text figure {
+    border: thin black;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 450px;
+    margin: auto;
+  }
 
-#login-container p {
-  font-family: Open Sans, sans-serif;
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 10;
-  text-align: center;
-}
+  .main-article-text img {
+    max-width: 450px;
+    max-height: 300px;
+  }
 
-#login-container p:hover,
-#login-title:hover {
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-}
+  .main-article-text figcaption {
+    background-color: black;
+    color: whitesmoke;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+  }
 
-#login-container input[type="submit"] {
-  background-color: black;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  box-sizing: border-box;
-  padding: 15px;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-}
+  #editor-block h1 {
+    font-family: Open Sans;
+    font-weight: Bold;
+    font-size: 42px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: black;
+    opacity: 1;
+    text-align: center;
+  }
 
-#login-container input[type="submit"]:hover {
-  background-color: gray;
-}
+  #article-summary-display-1 {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(3, 300px);
+    grid-gap: 40px;
+    justify-content: center;
+  }
 
-footer {
-  margin-top: 30px;
-  grid-area: ft;
-  text-align: center;
-  height: auto;
-}
+  #image-box-1 {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/minimalism-image.jpeg");
+    background-size: cover;
+  }
 
-#social-media {
-  display: flex;
-  justify-content: center;
-}
+  #image-box-2 {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/social-media-image.png");
+    background-size: cover;
+  }
 
-#social-media img {
-  height: 35px;
-  width: 35px;
-  margin: 2px;
-}
+  #image-box-3 {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/reddit-crypto.jpg");
+    background-size: cover;
+  }
 
-#social-media h1 {
-  font-family: Open Sans;
-  font-weight: Regular;
-  font-size: 18px;
-  opacity: 10;
-  text-align: center;
-}
+  #article-block-2 {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/offwhite-air-jordan-1-image.jpg");
+    background-size: contain;
+    width: 980px;
+    height: 500px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 45px;
+  }
 
-#footer-text {
-  text-align: center;
-  font-size: 20px;
-  margin: 10px;
-  margin-bottom: 30px;
+  #second-article-text {
+    width: 450px;
+    height: 320px;
+    position: absolute;
+    right: 0px;
+    padding: 15px;
+    padding-top: 35px;
+    bottom: 60px;
+  }
+
+  #lower-content-section {
+    display: grid;
+    grid-template-areas:
+      "col1 col1 col2 col2"
+      "col1 col1 col2 col2"
+      "col1 col1 col2 col2";
+  }
+
+  #article-summary-display-2 {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 200px 600px;
+    grid-template-rows: repeat(4, 220px);
+    grid-gap: 48px;
+    justify-content: center;
+  }
+
+  #image-box-4 {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/paper-building-image.jpg");
+    background-size: cover;
+  }
+
+  #image-box-5 {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/comfort-food-image.jpg");
+    background-size: cover;
+  }
+
+  #image-box-6 {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/fitness-image.jpg");
+    background-size: cover;
+  }
+
+  #image-box-7 {
+    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/climate-change.jpg");
+    background-size: cover;
+  }
+
+  #tags-list h2 {
+    font-family: Libre Baskerville;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 1;
+  }
+
+  #tags-list h3 {
+    grid-area: col2;
+    font-family: Open Sans;
+    font-weight: Regular;
+    font-style: italic;
+    font-size: 17px;
+    opacity: 1;
+  }
+
+  #author-section-title {
+    color: darkgray;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 40px;
+    font-weight: Regular;
+    opacity: 1;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .author-info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  #author-profile-picture {
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+  }
+
+  #author-text {
+    max-width: 600px;
+    font-family: Open Sans;
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: justify;
+    margin-left: 10px;
+  }
+
+  #author-text h1 {
+    font-family: "Berkshire Swash", cursive;
+    font-size: 18px;
+    text-align: left;
+  }
+  #author-text h1 span {
+    font-style: italic;
+  }
+
+  #author-text span {
+    font-weight: bold;
+  }
+
+  .section-title {
+    font-family: "Press Start 2P", cursive;
+    font-size: 60px;
+    font-family: "DM Serif Display", serif;
+    opacity: 1;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+    text-decoration: overline;
+  }
+
+  #meet-the-team {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 40px;
+  }
+
+  .card {
+    display: flex;
+    flex-flow: column;
+    border: thin black;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .card > * {
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .card h2 {
+    font-family: "Bangers", cursive;
+    font-weight: Bold;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .card h3 {
+    color: gray;
+    font-family: Open Sans;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 10;
+    text-align: center;
+  }
+
+  .card p {
+    font-family: Open Sans;
+    font-weight: Regular;
+    font-size: 14px;
+    text-align: justify;
+    padding: 15px;
+  }
+
+  .card p span {
+    font-weight: Bold;
+  }
+
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: gray;
+  }
+
+  .contact-box {
+    border-radius: 5px black;
+    font-weight: bold;
+    background-color: darkgray;
+    padding: 20px;
+    margin: auto;
+  }
+
+  #login-container {
+    display: flex;
+    text-align: center;
+    width: 300px;
+    border-radius: 5px black;
+    font-weight: bold;
+    background-image: linear-gradient(white, gray);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: auto;
+  }
+
+  #login-container img {
+    height: 120px;
+    width: 120px;
+    display: block;
+    margin: auto;
+  }
+
+  #login-title {
+    font-family: Open Sans;
+    font-weight: Regular;
+    font-size: 30px;
+    opacity: 10;
+    text-align: center;
+  }
+
+  #login-container p {
+    font-family: Open Sans, sans-serif;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 10;
+    text-align: center;
+  }
+
+  #login-container p:hover,
+  #login-title:hover {
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+
+  #login-container input[type="submit"] {
+    background-color: black;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    box-sizing: border-box;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  #login-container input[type="submit"]:hover {
+    background-color: gray;
+  }
+
+  footer {
+    margin-top: 30px;
+    grid-area: ft;
+    text-align: center;
+    height: auto;
+  }
+
+  #social-media {
+    display: flex;
+    justify-content: center;
+  }
+
+  #social-media img {
+    height: 35px;
+    width: 35px;
+    margin: 2px;
+  }
+
+  #social-media h1 {
+    font-family: Open Sans;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 10;
+    text-align: center;
+  }
+
+  #footer-text {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+  }
 }
