@@ -286,7 +286,6 @@ blockquote {
   padding: 5px;
   max-width: 450px;
   margin: auto;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .main-article-text img {
@@ -552,6 +551,65 @@ input[type="submit"]:hover {
   font-weight: bold;
   background-color: darkgray;
   padding: 20px;
+  margin: auto;
+}
+
+#login-container {
+  display: flex;
+  text-align: center;
+  width: 300px;
+  border-radius: 5px black;
+  font-weight: bold;
+  background-image: linear-gradient(white, gray);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: auto;
+}
+
+#login-container img {
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+
+#login-title {
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 30px;
+  opacity: 10;
+  text-align: center;
+}
+
+#login-container p {
+  font-family: Open Sans, sans-serif;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 10;
+  text-align: center;
+}
+
+#login-container p:hover,
+#login-title:hover {
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+#login-container input[type="submit"] {
+  background-color: black;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  box-sizing: border-box;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#login-container input[type="submit"]:hover {
+  background-color: gray;
 }
 
 footer {
@@ -570,6 +628,14 @@ footer {
   height: 35px;
   width: 35px;
   margin: 2px;
+}
+
+#social-media h1 {
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 18px;
+  opacity: 10;
+  text-align: center;
 }
 
 #footer-text {
