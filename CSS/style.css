@@ -40,6 +40,9 @@ body {
     padding-bottom: 5px;
   }
 
+  #blog-logo {
+  }
+
   nav img {
     float: left;
     object-fit: cover;
@@ -475,13 +478,20 @@ body {
     opacity: 1;
   }
 
-  #tags-list h3 {
+  #tags-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #tags-list li {
     grid-area: col2;
     font-family: Open Sans;
     font-weight: Regular;
     font-style: italic;
     font-size: 17px;
     opacity: 1;
+    padding-bottom: 20px;
   }
 
   #author-section-title {
