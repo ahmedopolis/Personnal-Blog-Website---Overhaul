@@ -1,0 +1,93 @@
+body {
+  width: 100%;
+  background-image: linear-gradient(white, black, white);
+  font-family: "Ubuntu", sans-serif;
+}
+body > * {
+  margin: auto;
+}
+
+.fullgridcontainer {
+  max-width: 90%;
+  margin: auto;
+  padding: 1%;
+  background-color: white;
+  box-shadow: 0 1% 2% 0 rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-areas:
+    "hd hd hd hd hd hd"
+    "mn mn mn mn mn mn"
+    "ft ft ft ft ft ft";
+}
+
+header {
+  grid-area: hd;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav img {
+  float: left;
+  object-fit: cover;
+}
+
+.drop-button {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  border: solid 2px black;
+  cursor: pointer;
+  margin: 10px;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+main {
+  grid-area: mn;
+}
+
+footer {
+  grid-area: ft;
+  text-align: center;
+  height: auto;
+}
