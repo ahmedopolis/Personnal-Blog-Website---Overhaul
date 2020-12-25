@@ -124,7 +124,8 @@ article {
 .main-article-text {
   max-width: auto;
   background-color: white;
-  padding: 10px;
+  padding: 2%;
+  margin: 2%;
 }
 
 .main-article-text > * {
@@ -227,12 +228,13 @@ blockquote {
   border: thin black;
   display: flex;
   flex-flow: column;
-  min-width: 90%;
   margin: auto;
 }
 
 .main-article-text img {
   object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .main-article-text figcaption {
@@ -260,28 +262,29 @@ blockquote {
   font-weight: Regular;
   opacity: 1;
   text-align: center;
-  margin: 10px;
 }
 
 .author-info {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  widows: 100%;
+  height: auto;
 }
 
 #author-profile-picture {
-  width: 20%;
+  width: 40%;
+  height: auto;
   object-fit: contain;
-  margin-right: 10px;
 }
 
 #author-text {
   width: 60%;
   font-family: Open Sans;
   font-weight: Regular;
-  font-size: 16px;
+  font-size: 12px;
   opacity: 1;
-  text-align: justify;
+  text-align: left;
   margin: 2%;
 }
 
@@ -303,6 +306,7 @@ footer {
   text-align: center;
   width: auto;
   height: auto;
+  margin-top: 5%;
 }
 
 #social-media {
