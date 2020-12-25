@@ -7,22 +7,28 @@
     <meta name="keywords" content="Blog, Tags, Articles" />
     <meta name="author" content="Ahmed Ibrahim" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/style2.css" />
   </head>
   <body>
     <div class="fullgridcontainer">
       <header>
         <nav>
           <img src="Images/Overhaul-logo-image.PNG" />
-          <a class="active" href="home.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a class="navigation-bar-right" id="login" href="login.html">Login</a>
-          <img
-            class="navigation-bar-right"
-            id="search-icon"
-            src="Images/search-icon-image.PNG"
-          />
+          <div class="dropdown">
+            <button class="drop-button">
+              <img
+                src="Images/drop-down-menu logo.png"
+                id="drop-down-button-logo"
+              />
+              <label>Menu</label>
+            </button>
+            <div class="dropdown-content">
+              <a class="active" href="home.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+              <a id="login" href="login.html">Login</a>
+            </div>
+          </div>
         </nav>
       </header>
       <main>
@@ -145,25 +151,25 @@
             Donec et nisl id justo pretium ultrices. Ut a nibh suscipit,
             volutpat purus a, varius justo.
           </p>
-          <div id="author-section-title">About the author</div>
-          <div class="author-info">
-            <img
-              id="author-profile-picture"
-              src="Images/Joe-Richardson-Image.png"
-            />
-            <div id="author-text">
-              <h1>
-                Joe Richardson, Senior Content Creator at
-                <span>SocialWorld</span> and follow me
-                <span>@joerich</span>
-              </h1>
-              <span>About: </span>Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Cras tincidunt, nisi in imperdiet volutpat, eros
-              quam tempus lorem, ac egestas quam velit vitae justo. Nulla
-              porttitor tellus eget nisl feugiat varius. Mauris suscipit lacus
-              vel ipsum placerat faucibus. Aliquam fringilla nec enim vel
-              sollicitudin. Etiam vel convallis neque. Duis nulla.
-            </div>
+        </div>
+        <div id="author-section-title">About the author</div>
+        <div class="author-info">
+          <img
+            id="author-profile-picture"
+            src="Images/Joe-Richardson-Image.png"
+          />
+          <div id="author-text">
+            <h1>
+              Joe Richardson, Senior Content Creator at
+              <span>SocialWorld</span> and follow me
+              <span>@joerich</span>
+            </h1>
+            <span>About: </span>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Cras tincidunt, nisi in imperdiet volutpat, eros
+            quam tempus lorem, ac egestas quam velit vitae justo. Nulla
+            porttitor tellus eget nisl feugiat varius. Mauris suscipit lacus vel
+            ipsum placerat faucibus. Aliquam fringilla nec enim vel
+            sollicitudin. Etiam vel convallis neque. Duis nulla.
           </div>
         </div>
       </main>
