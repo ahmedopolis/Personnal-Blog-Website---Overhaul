@@ -110,7 +110,7 @@ main {
 }
 
 #article-block-1 {
-  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-image.PNG");
+  background-image: url(Images/whiteface-image.png);
   background-size: cover;
 }
 
@@ -555,22 +555,22 @@ footer {
   }
 
   #image-box-1 {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/minimalism-image.jpeg");
+    background-image: url("Images/minimalism-image.jpeg");
     background-size: cover;
   }
 
   #image-box-2 {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/social-media-image.png");
+    background-image: url("Images/social-media-image.png");
     background-size: cover;
   }
 
   #image-box-3 {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/reddit-crypto.jpg");
+    background-image: url("Images/social-media-image.png");
     background-size: cover;
   }
 
   #article-block-2 {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/offwhite-air-jordan-1-image.jpg");
+    background-image: url("Images/social-media-image.png");
     background-size: contain;
     width: auto;
     height: 500px;
@@ -607,22 +607,22 @@ footer {
   }
 
   #image-box-4 {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/paper-building-image.jpg");
+    background-image: url("Images/paper-building-image.jpg");
     background-size: cover;
   }
 
   #image-box-5 {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/comfort-food-image.jpg");
+    background-image: url("Images/comfort-food-image.jpg");
     background-size: cover;
   }
 
   #image-box-6 {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/fitness-image.jpg");
+    background-image: url("Images/fitness-image.jpg");
     background-size: cover;
   }
 
   #image-box-7 {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/climate-change.jpg");
+    background-image: url("Images/climate-change.jpg");
     background-size: cover;
   }
 
