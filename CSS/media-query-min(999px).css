@@ -1,0 +1,155 @@
+@media (min-width: 999px) {
+  .fullgridcontainer {
+    width: 1000px;
+  }
+  #article-block-1 {
+    width: auto;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  #first-article-text {
+    width: 450px;
+    height: 270px;
+    position: absolute;
+    left: 50px;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .main-article-text > * {
+    margin: 3px;
+  }
+
+  .main-article-text h1 {
+    font-size: 38px;
+  }
+
+  .main-article-text h2 a:active {
+    font-weight: bolder;
+  }
+
+  .main-article-text h2 a:hover {
+    background-position: 0 100%;
+  }
+
+  .main-article-text p {
+    font-size: 16px;
+  }
+
+  #article-summary-display-1 {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(3, 350px);
+    grid-gap: 40px;
+    justify-content: center;
+  }
+
+  #image-box-1 {
+    background-image: url("Images/minimalism-image.jpeg");
+    background-size: cover;
+  }
+
+  #image-box-2 {
+    background-image: url("Images/social-media-image.png");
+    background-size: cover;
+  }
+
+  #image-box-3 {
+    background-image: url("Images/reddit-crypto.jpg");
+    background-size: cover;
+  }
+
+  #article-block-2 {
+    background-image: url("Images/offwhite-air-jordan-1-image.jpg");
+    background-size: contain;
+    width: auto;
+    height: 500px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 45px;
+  }
+
+  #second-article-text {
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    right: 0px;
+    padding: 15px;
+    padding-top: 25px;
+    bottom: 60px;
+  }
+
+  #lower-content-section {
+    display: grid;
+    grid-template-areas:
+      "col1 col1 col2 col2"
+      "col1 col1 col2 col2"
+      "col1 col1 col2 col2";
+  }
+
+  #article-summary-display-2 {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 250px 550px;
+    grid-template-rows: repeat(4, 250px);
+    grid-gap: 24px;
+    justify-content: center;
+  }
+
+  #image-box-4 {
+    background-image: url("Images/paper-building-image.jpg");
+    background-size: cover;
+  }
+
+  #image-box-5 {
+    background-image: url("Images/comfort-food-image.jpg");
+    background-size: cover;
+  }
+
+  #image-box-6 {
+    background-image: url("Images/fitness-image.jpg");
+    background-size: cover;
+  }
+
+  #image-box-7 {
+    background-image: url("Images/climate-change.jpg");
+    background-size: cover;
+  }
+
+  #author-text {
+    font-size: 20px;
+  }
+
+  #tags-list h2 {
+    font-family: Libre Baskerville;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 1;
+  }
+
+  #tags-list li {
+    grid-area: col2;
+    font-family: Open Sans;
+    font-weight: Regular;
+    font-style: italic;
+    font-size: 17px;
+    opacity: 1;
+    padding-bottom: 20px;
+  }
+
+  #meet-the-team {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+  }
+
+  .card p {
+    font-size: 15px;
+    text-align: left;
+  }
+}

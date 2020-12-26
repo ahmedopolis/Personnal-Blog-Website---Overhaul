@@ -1,0 +1,33 @@
+footer {
+  grid-area: ft;
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin-top: 5%;
+}
+
+#social-media {
+  display: flex;
+  justify-content: center;
+}
+
+#social-media img {
+  height: 35px;
+  width: 35px;
+  margin: 2px;
+}
+
+#social-media h1 {
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 18px;
+  opacity: 10;
+  text-align: center;
+}
+
+#footer-text {
+  text-align: center;
+  font-size: 20px;
+  margin: 10px;
+  margin-bottom: 30px;
+}

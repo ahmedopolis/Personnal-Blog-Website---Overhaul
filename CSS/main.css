@@ -1,0 +1,64 @@
+main {
+  grid-area: mn;
+}
+.main-article-text {
+  max-width: auto;
+  background-color: white;
+  padding: 2%;
+  margin: 2%;
+}
+
+.main-article-text > * {
+  margin: 2%;
+}
+
+.main-article-text h1 {
+  font-family: Libre Baskerville, serif;
+  font-weight: Bold;
+  font-size: 24px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.main-article-text h3 {
+  color: gray;
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 10;
+  text-align: left;
+}
+
+.main-article-text p {
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+}
+
+.main-article-text p::after {
+  content: "\a";
+  white-space: pre-line;
+}
+
+.main-article-text:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-article-text h4 {
+  color: gray;
+  font-family: Open Sans, sans-serif;
+  font-weight: Regular;
+  opacity: 1;
+  text-align: left;
+}
+
+#section-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 40px;
+  opacity: 1;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}

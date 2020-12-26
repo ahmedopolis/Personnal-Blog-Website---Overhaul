@@ -1,0 +1,22 @@
+body {
+  width: 100%;
+  background-image: linear-gradient(white, black, white);
+  font-family: "Ubuntu", sans-serif;
+}
+body > * {
+  margin: auto;
+}
+
+.fullgridcontainer {
+  width: 90%;
+  margin: auto;
+  padding: 2%;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 1% 2% 0 rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-areas:
+    "hd hd hd hd hd hd"
+    "mn mn mn mn mn mn"
+    "ft ft ft ft ft ft";
+}

@@ -1,0 +1,75 @@
+header {
+  grid-area: hd;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#drop-down-button-logo {
+  width: 25px;
+  height: 25px;
+  padding-top: 2px;
+}
+
+.drop-button {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: solid 4px black;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.drop-button label {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: Black;
+  font-size: 25px;
+  padding-left: 5px;
+}
+
+.drop-button:hover {
+  font-weight: bolder;
+  background-color: whitesmoke;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}

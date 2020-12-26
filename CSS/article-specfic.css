@@ -1,0 +1,63 @@
+#heading-4-variant {
+  text-align: center;
+}
+
+blockquote {
+  text-indent: -0.5em;
+  border-left: 30px solid lightgray;
+  font-family: "Langar", cursive;
+  font-size: 25px;
+}
+@supports (hanging-punctuation: first) {
+  blockquote {
+    text-indent: 0;
+    hanging-punctuation: first;
+  }
+}
+
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
+.author-info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  widows: 100%;
+  height: auto;
+}
+
+#author-profile-picture {
+  width: 40%;
+  height: auto;
+  object-fit: contain;
+}
+
+#author-text {
+  width: 60%;
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+  margin: 2%;
+}
+
+#author-text h1 {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 18px;
+  text-align: left;
+}
+#author-text h1 span {
+  font-style: italic;
+}
+
+#author-text span {
+  font-weight: bold;
+}
