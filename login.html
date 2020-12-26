@@ -7,27 +7,36 @@
     <meta name="keywords" content="Blog, Tags, Articles" />
     <meta name="author" content="Ahmed Ibrahim" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/style2.css" />
   </head>
   <body>
     <div class="fullgridcontainer">
       <header>
         <nav>
           <img src="Images/Overhaul-logo-image.PNG" />
-          <a class="active" href="home.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a class="navigation-bar-right" id="login" href="login.html">Login</a>
-          <img
-            class="navigation-bar-right"
-            id="search-icon"
-            src="Images/search-icon-image.PNG"
-          />
+          <div class="dropdown">
+            <button class="drop-button">
+              <img
+                src="Images/drop-down-menu logo.png"
+                id="drop-down-button-logo"
+              />
+              <label>Menu</label>
+            </button>
+            <div class="dropdown-content">
+              <a class="active" href="home.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+              <a id="login" href="login.html">Login</a>
+            </div>
+          </div>
         </nav>
       </header>
       <main>
-        <div class="banner-image" id="banner-login-image"></div>
-        <h1 class="section-title">Login</h1>
+        <div class="main-article-text">
+          <figure>
+            <img src="Images/login-banner.jpg" />
+          </figure>
+        <div id="section-title">Login</div>
         <div id="login-container">
           <form>
             <img src="Images/person-logo.png" />
@@ -50,6 +59,8 @@
             <p>Create New Account &rarr;</p>
           </form>
         </div>
+        </div>
+        </main>
       </main>
       <footer>
         <div id="social-media">
