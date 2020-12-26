@@ -7,27 +7,35 @@
     <meta name="keywords" content="Blog, Tags, Articles" />
     <meta name="author" content="Ahmed Ibrahim" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/style2.css" />
   </head>
   <body>
     <div class="fullgridcontainer">
       <header>
         <nav>
           <img src="Images/Overhaul-logo-image.PNG" />
-          <a class="active" href="home.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a class="navigation-bar-right" id="login" href="login.html">Login</a>
-          <img
-            class="navigation-bar-right"
-            id="search-icon"
-            src="Images/search-icon-image.PNG"
-          />
+          <div class="dropdown">
+            <button class="drop-button">
+              <img
+                src="Images/drop-down-menu logo.png"
+                id="drop-down-button-logo"
+              />
+              <label>Menu</label>
+            </button>
+            <div class="dropdown-content">
+              <a class="active" href="home.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+              <a id="login" href="login.html">Login</a>
+            </div>
+          </div>
         </nav>
       </header>
       <main>
-        <div class="banner-image" id="banner-technology-image"></div>
         <div class="main-article-text">
+          <figure>
+            <img src="Images/social-media-banner.jpg" />
+          </figure>
           <h1>The Impact of Social Media: Is it Irreplaceable?</h1>
           <h4 id="heading-4-variant">
             Emily James &#9830; May 17, 2020 (12 mins read)
