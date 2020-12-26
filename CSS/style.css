@@ -8,238 +8,521 @@
 
 body {
   width: 100%;
-  margin: auto;
   background-image: linear-gradient(white, black, white);
   font-family: "Ubuntu", sans-serif;
 }
+body > * {
+  margin: auto;
+}
 
-@media (min-width: 600px) and (max-width: 9998px) {
-  body {
-    width: 100%;
-    margin: auto;
-    background-image: linear-gradient(white, black, white);
-    font-family: "Ubuntu", sans-serif;
-  }
+.fullgridcontainer {
+  width: 90%;
+  margin: auto;
+  padding: 2%;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 1% 2% 0 rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-areas:
+    "hd hd hd hd hd hd"
+    "mn mn mn mn mn mn"
+    "ft ft ft ft ft ft";
+}
 
-  .fullgridcontainer {
-    max-width: 90%;
-    margin: auto;
-    padding: 2%;
-    background-color: white;
-    box-shadow: 0 1% 2% 0 rgba(0, 0, 0, 0.2);
-    display: grid;
-    grid-template-areas:
-      "hd hd hd hd hd hd"
-      "mn mn mn mn mn mnsssssssssssssssssssssssssssssss"
-      "ft ft ft ft ft ft";
-  }
+header {
+  grid-area: hd;
+  background-color: white;
+}
 
-  header {
-    grid-area: hd;
-    background-color: white;
-    padding-bottom: 5px;
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+}
 
-  nav img {
-    float: left;
-    object-fit: cover;
-  }
+#drop-down-button-logo {
+  width: 25px;
+  height: 25px;
+  padding-top: 2px;
+}
 
-  nav a {
-    float: left;
-    display: block;
-    text-align: center;
-    font-size: 25px;
-    color: black;
-    margin: 10px;
-    padding: 5px 5px;
-    text-decoration: none;
-  }
+.drop-button {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: solid 4px black;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 8px 16px;
+  text-align: center;
+}
 
-  nav a:hover {
-    font-weight: bold;
-    cursor: pointer;
-  }
+.drop-button label {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: Black;
+  font-size: 25px;
+  padding-left: 5px;
+}
 
-  nav a.active {
-    font-weight: bold;
-  }
+.drop-button:hover {
+  font-weight: bolder;
+  background-color: whitesmoke;
+}
 
-  #login {
-    float: right;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 15px;
-    border: 2px solid black;
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+main {
+  grid-area: mn;
+}
+
+#article-block-1 {
+  background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-image.PNG");
+  background-size: cover;
+}
+
+article {
+  height: auto;
+  padding: 3%;
+  position: relative;
+  margin-top: 3%;
+}
+
+.main-article-text {
+  max-width: auto;
+  background-color: white;
+  padding: 2%;
+  margin: 2%;
+}
+
+.main-article-text > * {
+  margin: 2%;
+}
+
+.main-article-text h1 {
+  font-family: Libre Baskerville, serif;
+  font-weight: Bold;
+  font-size: 24px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.main-article-text h3 {
+  color: gray;
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 10;
+  text-align: left;
+}
+
+.main-article-text h2 a {
+  font-family: Libre Baskerville, serif;
+  font-weight: Bold;
+  font-size: 25px;
+  text-align: left;
+  overflow: hidden;
+  background: linear-gradient(to right, purple, purple 50%, black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.main-article-text h2 a:active {
+  font-weight: bolder;
+}
+
+.main-article-text h2 a:hover {
+  background-position: 0 100%;
+}
+
+.main-article-text h4 {
+  color: gray;
+  font-family: Open Sans, sans-serif;
+  font-weight: Regular;
+  opacity: 1;
+  text-align: left;
+}
+
+#heading-4-variant {
+  text-align: center;
+}
+
+.main-article-text p {
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+}
+
+.main-article-text p::after {
+  content: "\a";
+  white-space: pre-line;
+}
+
+.main-article-text:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+blockquote {
+  text-indent: -0.5em;
+  border-left: 30px solid lightgray;
+  font-family: "Langar", cursive;
+  font-size: 25px;
+}
+@supports (hanging-punctuation: first) {
+  blockquote {
+    text-indent: 0;
+    hanging-punctuation: first;
   }
 }
 
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
+.main-article-text figure {
+  border: thin black;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+}
+
+.main-article-text img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.main-article-text figcaption {
+  background-color: black;
+  color: whitesmoke;
+  font: italic smaller sans-serif;
+  text-align: center;
+}
+
+#editor-block h1 {
+  font-family: Open Sans;
+  font-weight: Bold;
+  font-size: 42px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: black;
+  opacity: 1;
+  text-align: center;
+}
+
+.author-info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  widows: 100%;
+  height: auto;
+}
+
+#author-profile-picture {
+  width: 40%;
+  height: auto;
+  object-fit: contain;
+}
+
+#author-text {
+  width: 60%;
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+  margin: 2%;
+}
+
+#author-text h1 {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 18px;
+  text-align: left;
+}
+#author-text h1 span {
+  font-style: italic;
+}
+
+#author-text span {
+  font-weight: bold;
+}
+
+#section-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 40px;
+  opacity: 1;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+#meet-the-team {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+}
+
+.card {
+  display: flex;
+  flex-flow: column;
+  border: thin black;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.card > * {
+  margin: 0%;
+  padding: 0%;
+  overflow: hidden;
+}
+
+.card img {
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-family: "Bangers", cursive;
+  font-weight: Bold;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.card h3 {
+  color: gray;
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 18px;
+  opacity: 10;
+  text-align: center;
+}
+
+.card p {
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 14px;
+  text-align: justify;
+  padding: 15px;
+}
+
+.card p span {
+  font-weight: Bold;
+}
+
+#tags-list h2 {
+  font-family: Libre Baskerville;
+  font-weight: bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+
+#tags-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#tags-list li {
+  grid-area: col2;
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-style: italic;
+  font-size: 17px;
+  opacity: 1;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+#tags-list li:hover {
+  font-weight: bolder;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: gray;
+}
+
+.contact-box {
+  border-radius: 5px black;
+  font-weight: bold;
+  background-color: darkgray;
+  padding: 20px;
+  margin: auto;
+}
+
+#login-container {
+  display: flex;
+  text-align: center;
+  width: 300px;
+  border-radius: 5px black;
+  font-weight: bold;
+  background-image: linear-gradient(white, gray);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#login-container img {
+  height: 120px;
+  width: 120px;
+  display: block;
+  margin: auto;
+}
+
+#login-container p {
+  font-family: Open Sans, sans-serif;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 10;
+  text-align: center;
+}
+
+#login-container p:hover,
+#login-title:hover {
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+#login-container input[type="submit"] {
+  background-color: black;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  box-sizing: border-box;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#login-container input[type="submit"]:hover {
+  background-color: gray;
+}
+
+footer {
+  grid-area: ft;
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin-top: 5%;
+}
+
+#social-media {
+  display: flex;
+  justify-content: center;
+}
+
+#social-media img {
+  height: 35px;
+  width: 35px;
+  margin: 2px;
+}
+
+#social-media h1 {
+  font-family: Open Sans;
+  font-weight: Regular;
+  font-size: 18px;
+  opacity: 10;
+  text-align: center;
+}
+
+#footer-text {
+  text-align: center;
+  font-size: 20px;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
 @media (min-width: 999px) {
-  body {
-    width: 100%;
-    margin: auto;
-    background-image: linear-gradient(white, black, white);
-    font-family: "Ubuntu", sans-serif;
-  }
-
   .fullgridcontainer {
-    max-width: 1000px;
-    padding: 10px;
-    background-color: white;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    display: grid;
-    grid-template-areas:
-      "hd hd hd hd hd hd"
-      "mn mn mn mn mn mnsssssssssssssssssssssssssssssss"
-      "ft ft ft ft ft ft";
+    width: 1000px;
   }
-
-  header {
-    grid-area: hd;
-    background-color: white;
-    padding-bottom: 5px;
-  }
-
-  nav img {
-    float: left;
-    object-fit: cover;
-  }
-
-  nav a {
-    float: left;
-    display: block;
-    text-align: center;
-    font-size: 25px;
-    color: black;
-    margin: 10px;
-    padding: 5px 5px;
-    text-decoration: none;
-  }
-
-  nav a:hover {
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  nav a.active {
-    font-weight: bold;
-  }
-
-  #login {
-    float: right;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 15px;
-    border: 2px solid black;
-  }
-
-  main {
-    grid-area: mn;
-  }
-
-  .banner-image {
-    width: 980px;
-    height: 250px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  #banner-featured-image {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-banner.jpg");
-    background-size: contain;
-    background-repeat: round;
-  }
-
-  #banner-fashion-image {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/fashion-banner.jpg");
-    background-size: cover;
-  }
-
-  #banner-finance-image {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/finance-banner.jpg");
-    background-size: contain;
-  }
-
-  #banner-fitness-image {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/fitness-banner.jpg");
-    background-size: contain;
-    background-repeat: round;
-  }
-
-  #banner-food-image {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/food-banner.jpg");
-    background-size: cover;
-  }
-
-  #banner-minimalism-image {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/minimalism-banner.jpg");
-    background-size: cover;
-  }
-
-  #banner-nature-image {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/nature-banner.jpg");
-    background-size: cover;
-  }
-
-  #banner-real-estate-image {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/real-estate-banner.jpg");
-    background-size: cover;
-  }
-
-  #banner-technology-image {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/social-media-banner.jpg");
-    background-size: cover;
-  }
-
-  #banner-about-image {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/banner-about-image.jpg");
-    background-size: cover;
-    height: auto;
-  }
-
-  #banner-about-image h1 {
-    color: white;
-    font-family: "Shadows Into Light", cursive;
-    font-size: 60px;
-    font-weight: Regular;
-    opacity: 1;
-    text-align: center;
-    margin: 10px;
-  }
-
-  #banner-contact-image {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/contact-us-banner.jpg");
-    background-size: cover;
-    margin-top: 15px;
-  }
-
-  #banner-login-image {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/login-banner.jpg");
-    background-size: cover;
-    margin-top: 15px;
-  }
-
   #article-block-1 {
-    background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/whiteface-image.PNG");
-    background-size: cover;
-    width: 980px;
+    width: auto;
     height: 500px;
+    margin: auto;
     position: relative;
     margin-top: 20px;
+    padding: 0;
   }
 
   #first-article-text {
     width: 450px;
-    height: 290px;
+    height: 270px;
     position: absolute;
     left: 50px;
     padding: 15px;
-  }
-
-  .main-article-text {
-    background-color: white;
-    padding: 10px;
+    margin: 0;
   }
 
   .main-article-text > * {
@@ -247,35 +530,7 @@ body {
   }
 
   .main-article-text h1 {
-    font-family: Libre Baskerville, serif;
-    font-weight: Bold;
     font-size: 38px;
-    text-align: center;
-    overflow: hidden;
-  }
-
-  .main-article-text h3 {
-    color: gray;
-    font-family: Open Sans;
-    font-weight: Regular;
-    font-size: 20px;
-    opacity: 10;
-    text-align: left;
-  }
-
-  .main-article-text h2 a {
-    font-family: Libre Baskerville, serif;
-    font-weight: Bold;
-    font-size: 25px;
-    text-align: left;
-    overflow: hidden;
-    background: linear-gradient(to right, purple, purple 50%, black 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position 275ms ease;
   }
 
   .main-article-text h2 a:active {
@@ -286,98 +541,15 @@ body {
     background-position: 0 100%;
   }
 
-  .main-article-text h4 {
-    color: gray;
-    font-family: Open Sans, sans-serif;
-    font-weight: Regular;
-    opacity: 1;
-    text-align: left;
-    margin: 10px;
-  }
-
-  #heading-4-variant {
-    text-align: center;
-  }
-
   .main-article-text p {
-    font-family: Open Sans;
-    font-weight: Regular;
     font-size: 16px;
-    opacity: 1;
-    text-align: left;
-    display: inline;
-  }
-
-  .main-article-text p::after {
-    content: "\a";
-    white-space: pre-line;
-  }
-
-  .main-article-text:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  blockquote {
-    text-indent: -0.5em;
-    border-left: 30px solid lightgray;
-    font-family: "Langar", cursive;
-    font-size: 25px;
-  }
-  @supports (hanging-punctuation: first) {
-    blockquote {
-      text-indent: 0;
-      hanging-punctuation: first;
-    }
-  }
-
-  blockquote::before {
-    content: open-quote;
-  }
-  blockquote::after {
-    content: close-quote;
-  }
-  blockquote {
-    quotes: "“" "”" "‘" "’";
-  }
-
-  .main-article-text figure {
-    border: thin black;
-    display: flex;
-    flex-flow: column;
-    padding: 5px;
-    max-width: 450px;
-    margin: auto;
-  }
-
-  .main-article-text img {
-    max-width: 450px;
-    max-height: 300px;
-  }
-
-  .main-article-text figcaption {
-    background-color: black;
-    color: whitesmoke;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
-  }
-
-  #editor-block h1 {
-    font-family: Open Sans;
-    font-weight: Bold;
-    font-size: 42px;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-color: black;
-    opacity: 1;
-    text-align: center;
   }
 
   #article-summary-display-1 {
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(2, 400px);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(3, 350px);
     grid-gap: 40px;
     justify-content: center;
   }
@@ -400,7 +572,7 @@ body {
   #article-block-2 {
     background-image: url("C:/Users/ajimp/Documents/GitHub/Personnal-Blog-Website---NBA-Witnesses/Images/offwhite-air-jordan-1-image.jpg");
     background-size: contain;
-    width: 980px;
+    width: auto;
     height: 500px;
     position: relative;
     margin-top: 50px;
@@ -409,11 +581,11 @@ body {
 
   #second-article-text {
     width: 450px;
-    height: 320px;
+    height: 300px;
     position: absolute;
     right: 0px;
     padding: 15px;
-    padding-top: 35px;
+    padding-top: 25px;
     bottom: 60px;
   }
 
@@ -428,9 +600,9 @@ body {
   #article-summary-display-2 {
     padding: 10px;
     display: grid;
-    grid-template-columns: 200px 600px;
-    grid-template-rows: repeat(4, 220px);
-    grid-gap: 48px;
+    grid-template-columns: 250px 550px;
+    grid-template-rows: repeat(4, 250px);
+    grid-gap: 24px;
     justify-content: center;
   }
 
@@ -454,17 +626,15 @@ body {
     background-size: cover;
   }
 
+  #author-text {
+    font-size: 20px;
+  }
+
   #tags-list h2 {
     font-family: Libre Baskerville;
     font-weight: bold;
     font-size: 20px;
     opacity: 1;
-  }
-
-  #tags-list ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
   }
 
   #tags-list li {
@@ -477,239 +647,14 @@ body {
     padding-bottom: 20px;
   }
 
-  #author-section-title {
-    color: darkgray;
-    font-family: "Shadows Into Light", cursive;
-    font-size: 40px;
-    font-weight: Regular;
-    opacity: 1;
-    text-align: center;
-    margin: 10px;
-  }
-
-  .author-info {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-
-  #author-profile-picture {
-    height: 200px;
-    width: 200px;
-    margin-right: 10px;
-  }
-
-  #author-text {
-    max-width: 600px;
-    font-family: Open Sans;
-    font-weight: Regular;
-    font-size: 16px;
-    opacity: 1;
-    text-align: justify;
-    margin-left: 10px;
-  }
-
-  #author-text h1 {
-    font-family: "Berkshire Swash", cursive;
-    font-size: 18px;
-    text-align: left;
-  }
-  #author-text h1 span {
-    font-style: italic;
-  }
-
-  #author-text span {
-    font-weight: bold;
-  }
-
-  .section-title {
-    font-family: "Press Start 2P", cursive;
-    font-size: 60px;
-    font-family: "DM Serif Display", serif;
-    opacity: 1;
-    text-align: center;
-    margin: 10px;
-    margin-bottom: 20px;
-    text-decoration: overline;
-  }
-
   #meet-the-team {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-gap: 40px;
-  }
-
-  .card {
-    display: flex;
-    flex-flow: column;
-    border: thin black;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .card > * {
-    margin: 0%;
-    padding: 0%;
-    overflow: hidden;
-  }
-
-  .card img {
-    max-width: 100%;
-    height: 300px;
-    object-fit: cover;
-  }
-
-  .card h2 {
-    font-family: "Bangers", cursive;
-    font-weight: Bold;
-    font-size: 35px;
-    text-align: center;
-    padding-top: 10px;
-  }
-
-  .card h3 {
-    color: gray;
-    font-family: Open Sans;
-    font-weight: Regular;
-    font-size: 18px;
-    opacity: 10;
-    text-align: center;
+    grid-gap: 20px;
   }
 
   .card p {
-    font-family: Open Sans;
-    font-weight: Regular;
-    font-size: 14px;
-    text-align: justify;
-    padding: 15px;
-  }
-
-  .card p span {
-    font-weight: Bold;
-  }
-
-  input[type="text"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid gray;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-
-  input[type="submit"] {
-    background-color: black;
-    font-weight: bold;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  input[type="submit"]:hover {
-    background-color: gray;
-  }
-
-  .contact-box {
-    border-radius: 5px black;
-    font-weight: bold;
-    background-color: darkgray;
-    padding: 20px;
-    margin: auto;
-  }
-
-  #login-container {
-    display: flex;
-    text-align: center;
-    width: 300px;
-    border-radius: 5px black;
-    font-weight: bold;
-    background-image: linear-gradient(white, gray);
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: auto;
-  }
-
-  #login-container img {
-    height: 120px;
-    width: 120px;
-    display: block;
-    margin: auto;
-  }
-
-  #login-title {
-    font-family: Open Sans;
-    font-weight: Regular;
-    font-size: 30px;
-    opacity: 10;
-    text-align: center;
-  }
-
-  #login-container p {
-    font-family: Open Sans, sans-serif;
-    font-weight: Regular;
-    font-size: 20px;
-    opacity: 10;
-    text-align: center;
-  }
-
-  #login-container p:hover,
-  #login-title:hover {
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-  }
-
-  #login-container input[type="submit"] {
-    background-color: black;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    box-sizing: border-box;
-    padding: 15px;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-  }
-
-  #login-container input[type="submit"]:hover {
-    background-color: gray;
-  }
-
-  footer {
-    margin-top: 30px;
-    grid-area: ft;
-    text-align: center;
-    height: auto;
-  }
-
-  #social-media {
-    display: flex;
-    justify-content: center;
-  }
-
-  #social-media img {
-    height: 35px;
-    width: 35px;
-    margin: 2px;
-  }
-
-  #social-media h1 {
-    font-family: Open Sans;
-    font-weight: Regular;
-    font-size: 18px;
-    opacity: 10;
-    text-align: center;
-  }
-
-  #footer-text {
-    text-align: center;
-    font-size: 20px;
-    margin: 10px;
-    margin-bottom: 30px;
+    font-size: 15px;
+    text-align: left;
   }
 }
