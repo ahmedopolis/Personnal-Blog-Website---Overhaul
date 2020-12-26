@@ -1,5 +1,5 @@
 #article-block-1 {
-  background-image: url(Images/whiteface-image.png);
+  background-image: url("../Images/whiteface-image.png");
   background-size: cover;
 }
 
