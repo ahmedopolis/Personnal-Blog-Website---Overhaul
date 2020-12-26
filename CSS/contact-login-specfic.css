@@ -36,7 +36,7 @@ input[type="submit"]:hover {
 #login-container {
   display: flex;
   text-align: center;
-  width: 300px;
+  width: 250px;
   border-radius: 5px black;
   font-weight: bold;
   background-image: linear-gradient(white, gray);

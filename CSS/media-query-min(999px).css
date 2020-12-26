@@ -84,14 +84,6 @@
     bottom: 60px;
   }
 
-  #lower-content-section {
-    display: grid;
-    grid-template-areas:
-      "col1 col1 col2 col2"
-      "col1 col1 col2 col2"
-      "col1 col1 col2 col2";
-  }
-
   #article-summary-display-2 {
     padding: 10px;
     display: grid;
