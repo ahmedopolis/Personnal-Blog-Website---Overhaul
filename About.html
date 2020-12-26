@@ -7,129 +7,136 @@
     <meta name="keywords" content="Blog, Tags, Articles" />
     <meta name="author" content="Ahmed Ibrahim" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/style2.css" />
   </head>
   <body>
     <div class="fullgridcontainer">
       <header>
         <nav>
           <img src="Images/Overhaul-logo-image.PNG" />
-          <a class="active" href="home.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a class="navigation-bar-right" id="login" href="login.html">Login</a>
-          <img
-            class="navigation-bar-right"
-            id="search-icon"
-            src="Images/search-icon-image.PNG"
-          />
+          <div class="dropdown">
+            <button class="drop-button">
+              <img
+                src="Images/drop-down-menu logo.png"
+                id="drop-down-button-logo"
+              />
+              <label>Menu</label>
+            </button>
+            <div class="dropdown-content">
+              <a class="active" href="home.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+              <a id="login" href="login.html">Login</a>
+            </div>
+          </div>
         </nav>
       </header>
       <main>
-        <div class="banner-image" id="banner-about-image">
-          <h1>We tell the stories that drive the heart.</h1>
-          <h1>We tell the news that makes the most impact.</h1>
-        </div>
-        <h1 class="section-title">Meet Our Team</h1>
-        <div id="meet-the-team">
-          <div class="card">
-            <img src="Images/Phil-McGraw.jpg" />
-            <h2>Phil McGraw</h2>
-            <h3>CEO & CO-FOUNDER</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-              <br />
-              <span>Email: phil.mcgraw@overhaul.com</span>
-            </p>
-          </div>
-          <div class="card">
-            <img src="Images/Nico-Clinton.jpg" />
-            <h2>Nico Clinton</h2>
-            <h3>COO & CO-FOUNDER</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-              <br />
-              <span>Email: nico.clinton@overhaul.com</span>
-            </p>
-          </div>
-          <div class="card">
-            <img src="Images/Jane-Seymour.jpg" />
-            <h2>Jane Seymour</h2>
-            <h3>CTO & CO-FOUNDER</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-              <br />
-              <span>Email: jane.seymour@overhaul.com</span>
-            </p>
-          </div>
-          <div class="card">
-            <img src="Images/Cindy-Woodland.jpg" />
-            <h2>Cindy Woodland</h2>
-            <h3>CREATIVE DIRECTOR</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-              <br />
-              <span>Email: cindy.woodland@overhaul.com</span>
-            </p>
-          </div>
-          <div class="card">
-            <img src="Images/Allain-Basque.jpg" />
-            <h2>Allain Basque</h2>
-            <h3>FULL-STACK DEVELOPER</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-              <br />
-              <span>Email: allain.basque@overhaul.com</span>
-            </p>
-          </div>
-          <div class="card">
-            <img src="Images/mathieu.gignac.jpg" />
-            <h2>Mathieu Gignac</h2>
-            <h3>SENIOR WRITER</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-              <br />
-              <span>Email: mathieu.gignac@overhaul.com</span>
-            </p>
-          </div>
-          <div class="card">
-            <img src="Images/Jesse-Shapiro.jpg" />
-            <h2>JESSE SHAPIRO</h2>
-            <h3>SENIOR WRITER</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-              <br />
-              <span>Email: jesse.shapiro@overhaul.com</span>
-            </p>
-          </div>
-          <div class="card">
-            <img src="Images/emily.cooper.jpg" />
-            <h2>Emily Cooper</h2>
-            <h3>WRITER</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-              <br />
-              <span>Email: emily.cooper@overhaul.com</span>
-            </p>
-          </div>
-          <div class="card">
-            <img src="Images/john-garner.jpg" />
-            <h2>JOHN GARNER</h2>
-            <h3>GRAPHIC DESIGNER</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-              <br />
-              <span>Email: john.garner@overhaul.com</span>
-            </p>
+        <div class="main-article-text">
+          <figure>
+            <img src="Images/banner-about-image.jpg" />
+          </figure>
+          <h1 id="section-title">Meet Our Team</h1>
+          <div id="meet-the-team">
+            <div class="card">
+              <img src="Images/Phil-McGraw.jpg" />
+              <h2>Phil McGraw</h2>
+              <h3>CEO & CO-FOUNDER</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consec adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <br />
+                <span>Email: phil.mcgraw@overhaul.com</span>
+              </p>
+            </div>
+            <div class="card">
+              <img src="Images/Nico-Clinton.jpg" />
+              <h2>Nico Clinton</h2>
+              <h3>COO & CO-FOUNDER</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consec adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <br />
+                <span>Email: nico.clinton@overhaul.com</span>
+              </p>
+            </div>
+            <div class="card">
+              <img src="Images/Jane-Seymour.jpg" />
+              <h2>Jane Seymour</h2>
+              <h3>CTO & CO-FOUNDER</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consec adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <br />
+                <span>Email: jane.seymour@overhaul.com</span>
+              </p>
+            </div>
+            <div class="card">
+              <img src="Images/Cindy-Woodland.jpg" />
+              <h2>Cindy Woodland</h2>
+              <h3>CREATIVE DIRECTOR</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consec adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <br />
+                <span>Email: cindy.woodland@overhaul.com</span>
+              </p>
+            </div>
+            <div class="card">
+              <img src="Images/Allain-Basque.jpg" />
+              <h2>Allain Basque</h2>
+              <h3>FULL-STACK DEVELOPER</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consec adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <br />
+                <span>Email: allain.basque@overhaul.com</span>
+              </p>
+            </div>
+            <div class="card">
+              <img src="Images/mathieu.gignac.jpg" />
+              <h2>Mathieu Gignac</h2>
+              <h3>SENIOR WRITER</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consec adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <br />
+                <span>Email: mathieu.gignac@overhaul.com</span>
+              </p>
+            </div>
+            <div class="card">
+              <img src="Images/Jesse-Shapiro.jpg" />
+              <h2>JESSE SHAPIRO</h2>
+              <h3>SENIOR WRITER</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consec adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <br />
+                <span>Email: jesse.shapiro@overhaul.com</span>
+              </p>
+            </div>
+            <div class="card">
+              <img src="Images/emily.cooper.jpg" />
+              <h2>Emily Cooper</h2>
+              <h3>WRITER</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consec adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <br />
+                <span>Email: emily.cooper@overhaul.com</span>
+              </p>
+            </div>
+            <div class="card">
+              <img src="Images/john-garner.jpg" />
+              <h2>JOHN GARNER</h2>
+              <h3>GRAPHIC DESIGNER</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consec adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <br />
+                <span>Email: john.garner@overhaul.com</span>
+              </p>
+            </div>
           </div>
         </div>
       </main>
